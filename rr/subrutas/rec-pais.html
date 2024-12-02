@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas por países - Comedera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .header {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin: 1rem auto;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .nav {
+            background-color: #fff;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-list a:hover {
+            color: #ff6b6b;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .breadcrumb {
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.875rem;
+        }
+
+        .breadcrumb a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .hero-image {
+            width: 100%;
+            max-height: 600px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .content-section p {
+            margin-bottom: 1.5rem;
+        }
+
+        .cuisine-section {
+            margin-top: 3rem;
+        }
+
+        .cuisine-title {
+            color: #ff6b6b;
+            text-decoration: none;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .cuisine-title:hover {
+            text-decoration: underline;
+        }
+
+        .cuisine-description {
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                gap: 1rem;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/placeholder.svg" alt="Comedera Logo">
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#recetas">RECETAS</a></li>
+            <li><a href="#bebidas">BEBIDAS Y CÓCTELES</a></li>
+            <li><a href="#paises">RECETAS POR PAÍSES</a></li>
+            <li><a href="#inspiracion">INSPIRACIÓN</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="breadcrumb">
+            <a href="#">Comedera</a> » <span>Recetas por países</span>
+        </div>
+
+        <h1 class="page-title">Recetas por países</h1>
+
+        <img src="/placeholder.svg" alt="Pizza italiana con ingredientes frescos" class="hero-image">
+
+        <div class="content-section">
+            <p>Cada país tiene su propia gastronomía, basadas en ingredientes, tradiciones y gustos particulares de cada provincia, ciudad y pueblo.</p>
+            
+            <p>En Comedera.Com somos amantes de los sabores exóticos, cargados de historia y cultura, no importa de que parte del mundo.</p>
+            
+            <p>Tenemos muchas recetas internacionales que te invitamos a que cocines y saborees.</p>
+
+            <div class="cuisine-section">
+                <a href="#" class="cuisine-title">Recetas de comida mexicana</a>
+                <p class="cuisine-description">La gastronomía de México está entre las favoritas de todos. Somos fanáticos de las mil formas de comer tacos, de las flautas, tostadas, botanas y postres. Tenemos una lista de platos que te va a encantar.</p>
+            </div>
+
+            <div class="cuisine-section">
+                <a href="#" class="cuisine-title">Recetas de comida española</a>
+                <p class="cuisine-description">La herencia culinaria de España en toda América es indiscutible. Prueba alguno de nuestros platos que seguro te vas a enamorar y vas a querer cocinar más.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
