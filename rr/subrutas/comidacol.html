@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de comida colombiana - Comedera</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin: 1rem auto;
+        }
+
+        .logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .nav {
+            background-color: #fff;
+            padding: 1rem;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-list a:hover {
+            color: #ff6b6b;
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            flex: 1;
+        }
+
+        .breadcrumb {
+            margin-bottom: 1rem;
+            color: #666;
+            font-size: 0.875rem;
+        }
+
+        .breadcrumb a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333;
+        }
+
+        .content-section {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            line-height: 1.6;
+            color: #444;
+        }
+
+        .content-section p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-section a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        .content-section a:hover {
+            text-decoration: underline;
+        }
+
+        .typical-foods {
+            margin: 2rem 0;
+        }
+
+        .typical-foods ul {
+            list-style: none;
+            margin-left: 1rem;
+        }
+
+        .typical-foods li {
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .typical-foods li::before {
+            content: "•";
+            color: #ff6b6b;
+            position: absolute;
+            left: -1rem;
+        }
+
+        .recipes-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .recipe-card {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .recipe-info {
+            padding: 1.5rem;
+        }
+
+        .recipe-title {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 0.5rem;
+            text-decoration: none;
+            display: block;
+        }
+
+        .recipe-title:hover {
+            color: #ff6b6b;
+        }
+
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 2rem 1rem;
+            margin-top: auto;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-logo {
+            max-width: 150px;
+        }
+
+        .footer-logo img {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.875rem;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .scroll-top {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .scroll-top:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        @media (max-width: 768px) {
+            .nav-list {
+                gap: 1rem;
+            }
+            
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="/placeholder.svg" alt="Comedera Logo">
+        </div>
+    </header>
+
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#recetas">RECETAS</a></li>
+            <li><a href="#bebidas">BEBIDAS Y CÓCTELES</a></li>
+            <li><a href="#paises">RECETAS POR PAÍSES</a></li>
+            <li><a href="#inspiracion">INSPIRACIÓN</a></li>
+        </ul>
+    </nav>
+
+    <main class="main-content">
+        <div class="breadcrumb">
+            <a href="#">Comedera</a> » <span>Comida colombiana</span>
+        </div>
+
+        <h1 class="page-title">Recetas de comida colombiana</h1>
+
+        <div class="content-section">
+            <p>La <strong>gastronomía colombiana</strong> es una de las más variadas y deliciosas de América Latina. La comida del país combina sabores e ingredientes de las diferentes regiones, lo que la convierte en una experiencia culinaria muy especial.</p>
+
+            <p>En la <strong>costa caribeña</strong>, por ejemplo, se pueden encontrar platos a base de mariscos y pescados frescos, como la <a href="#">mojarra frita</a>. En los <strong>Andes</strong>, la comida se caracteriza por el uso de ingredientes como las papas, el maíz y los frijoles, que se utilizan en platos como el <a href="#">ajiaco</a>, una sopa reconfortante hecha con pollo, papa y maíz. En la región de <strong>Antioquia</strong>, la <a href="#">bandeja paisa</a> es el plato más famoso, que combina arroz, frijoles, carne molida, chicharrón, chorizo, huevo frito y aguacate.</p>
+
+            <div class="typical-foods">
+                <h2>Otras comidas típicas de Colombia son:</h2>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="subrutas/rec-pollo.html">RECETAS</a></li>
+                    <li><a href="subrutas/bebidas.html">BEBIDAS Y CÓCTELES</a></li>
+                    <li><a href="subrutas/rec-pais.html">RECETAS POR PAÍSES</a></li>
+                    <li><a href="subrutas/insp.html">INSPIRACIÓN</a></li>
+                    <li><a href="#">COMIDA COLOMBIANA</a></li>
+                </ul>
+
+            </div>
+
+            <p>¡Pero tenemos muchas más! Mira aquí abajo todas nuestras recetas de comida colombiana, escoge tu favorita y deléitate con sus sabores.</p>
+        </div>
+
+        <div class="recipes-grid">
+            <article class="recipe-card">
+                <img src="/placeholder.svg" alt="Buñuelos colombianos">
+                <div class="recipe-info">
+                    <a href="#" class="recipe-title">Receta de buñuelos colombianos, dulce criollo</a>
+                </div>
+            </article>
+
+            <article class="recipe-card">
+                <img src="/placeholder.svg" alt="Puchero colombiano">
+                <div class="recipe-info">
+                    <a href="#" class="recipe-title">Puchero colombiano, un estofado con sabor a tradición</a>
+                </div>
+            </article>
+
+            <article class="recipe-card">
+                <img src="/placeholder.svg" alt="Cazuela de mariscos">
+                <div class="recipe-info">
+                    <a href="#" class="recipe-title">Receta de cazuela de mariscos</a>
+                </div>
+            </article>
+
+            <article class="recipe-card">
+                <img src="/placeholder.svg" alt="Ensalada de frutas colombiana">
+                <div class="recipe-info">
+                    <a href="#" class="recipe-title">Receta ensalada de frutas colombiana</a>
+                </div>
+            </article>
+
+            <article class="recipe-card">
+                <img src="/placeholder.svg" alt="Champús colombiano">
+                <div class="recipe-info">
+                    <a href="#" class="recipe-title">Cómo hacer el auténtico champús colombiano</a>
+                </div>
+            </article>
+
+            <article class="recipe-card">
+                <img src="/placeholder.svg" alt="Ceviche colombiano">
+                <div class="recipe-info">
+                    <a href="#" class="recipe-title">Receta de ceviche colombiano</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="/placeholder.svg" alt="Comedera Logo">
+            </div>
+            <div class="footer-links">
+                <a href="#">About Comedera.Com</a>
+                <a href="#">Política de privacidad</a>
+                <a href="#">Política de cookies</a>
+            </div>
+            <button class="scroll-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                SUBIR
+            </button>
+        </div>
+    </footer>
+</body>
+</html>

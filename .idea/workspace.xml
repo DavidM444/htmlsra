@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="039435bd-9bc1-4b01-91f6-26a5d9bf9634" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/rr/subrutas/bebidas.html" beforeDir="false" afterPath="$PROJECT_DIR$/rr/subrutas/bebidas.html" afterDir="false" />
+    <list default="true" id="039435bd-9bc1-4b01-91f6-26a5d9bf9634" name="Changes" comment="files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rr/subrutas/insp.html" beforeDir="false" afterPath="$PROJECT_DIR$/rr/subrutas/insp.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
