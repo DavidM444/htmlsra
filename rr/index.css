@@ -287,7 +287,7 @@
     text-align: center;
 }
 
-.future-implementation {
+.suscribe-com {
     width: 100%;
     padding: 2rem;
     background: #f5f5f5;
@@ -295,6 +295,10 @@
     margin: 2rem 0;
     text-align: center;
     color: #666;
+}
+
+.suscribe-com h4 {
+    padding: 1rem;
 }
 
 .flex-container {
@@ -307,7 +311,7 @@
 }
 
 @media (min-width: 1024px) {
-    .future-implementation {
+    .suscribe-com {
         width: 30%;
         margin: 0;
     }
@@ -318,22 +322,22 @@
     }
 }
 
-.future-implementation .email-input {
+.suscribe-com .email-input {
     background: white;
     margin-bottom: 1rem;
 }
 
-.future-implementation .form-title {
+.suscribe-com .form-title {
     color: #333;
     text-align: left;
 }
 
-.future-implementation .privacy-notice {
+.suscribe-com .privacy-notice {
     color: #666;
     margin-top: 1rem;
 }
 
-.future-implementation .privacy-notice a {
+.suscribe-com .privacy-notice a {
     color: #666;
     text-decoration: underline;
 }
